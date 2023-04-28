@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  transition: all 0.5s ease;
+}
+
+.wrapper-menu a:hover {
+  transition: 0.3s;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.main-content .title,
+.main-content .quote,
+.main-content .content-box {
+  margin: 70px auto;
+}
+
+.wrapper-menu {
+  display: flex;
+  background-color: #778465;
+  padding: 10px;
+  justify-content: right;
+  width: 100%;
+  top: 0;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0px 0px 14px rgb(46, 46, 46);
+}
+
+.wrapper-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.title h2 {
+  font-size: 50px;
+  text-shadow: 0px 0px 10px black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper-background::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: url("./img/background-image.jpg") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  scale: 1.1;
+}
+
+.content-box {
+  border: 1px solid black;
+  box-shadow: 0px 0px 14px rgb(46, 46, 46);
+  transition: all 0.5s ease;
+  padding: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  width: 700px;
+  margin: auto;
+}
+
+.content-box.olive-green {
+  background-color: #778465;
+}
+
+.content-box.points {
+  background-color: #964447;
+}
+
+.content-box.orange {
+  background-color: #bc8932;
+}
+
+.content-box.dark-orange {
+  background-color: #b05528;
+}
+
+.content-box.purple {
+  background-color: #7b6a7a;
+}
+
+.points li {
+  text-align: left;
+}
+
+.points .headline {
+  margin-bottom: 20px;
+}
+
+.content-box:hover {
+  background-color: #ffffff;
+  color: black;
+  transition: 0.5s;
+}
+
+.quote {
+  text-align: center;
+  width: 700px;
+  margin: auto;
+  color: white;
+  text-shadow: 0px 0px 10px black;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #cb9991;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer a:hover {
+  transition: 0.3s;
+  color: white;
+}
